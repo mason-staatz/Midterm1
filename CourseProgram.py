@@ -23,21 +23,19 @@ def main():
     registers = cc.Register(name, crn)
 
     for i in students:
-
         print(registers.get_name())
         print("Course Name: ", courses.get_name())
         print("CRN: ", courses.get_crn())
         courses.update_seat_count()
         print("Seats Left: ", courses.get_seats())
-        if seats == 0:
-            print(
-                "Sorry ",
-                registers.get_name(),
-                " registration is ",
-                courses.get_status(),
-                " for ",
-                courses.get_name(),
-            )
+        print(
+            "Sorry ",
+            registers.get_name(),
+            "registration is",
+            courses.get_status(),
+            "for",
+            courses.get_name(),
+        )
 
 
 # print('Student Name: ', registers.get_name())
